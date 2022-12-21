@@ -49,7 +49,11 @@ export function Counter() {
         >
           Add Amount
         </button>
-        <button className={styles.button} onClick={() => dispatch(reset())}>
+        <button
+          className={styles.button}
+          aria-label="Reset"
+          onClick={() => dispatch(reset())}
+        >
           Reset
         </button>
       </div>
